@@ -1,0 +1,172 @@
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif;
+}
+
+
+
+.home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 14vw;
+}
+
+@media (max-width:980px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 5rem;
+    }
+}
+
+nav img{
+    margin-right: 1em;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.navigation{
+
+    display: flex;
+    gap: 1.5em;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+@media (max-width:980px){
+    .navigation{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    font-weight:600;
+}
+
+hr{
+
+    margin: 0;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.body p:first-child{
+    margin-top: 2.5rem;
+    margin-bottom: 1.5em;
+}
+.body p:last-child{
+    margin-top: 0;
+}
+
+
+/* .section{
+    display: flex;
+} */
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    margin-top: 15em;
+    margin-left: 18%;
+    margin-right: 18%;
+    justify-content: space-between;
+    
+}
+
+
+.options div{
+    /* margin: 0 1%; */
+}
+
+.section h1{
+    /* display: block; */
+}
+
+
+
+.options div ul li{
+    margin-bottom: 0.8em;
+    list-style: none;
+    text-decoration: none;
+}
+.options div ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+footer{
+    padding: 1em 0;
+    background-color: rgb(228, 228, 230);
+    /* margin-top: auto; */
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+.footer-left{
+    margin-left: 18%;
+}
+
+.footer-left span{
+    margin-right: 7px;
+}
+.footer-left span a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.footer-right{
+    margin-right: 18%;
+    scale: 1.2;
+    display: flex;
+    gap: 1em;
+}
+
+
+@media(max-width:980px){
+    .body{
+        margin: 0 40px;
+    }
+
+    .options{
+        margin: 0 5px;
+    }
+
+    .options h1{
+        padding-left: 40px;
+    }
+}
