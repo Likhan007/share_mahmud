@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.home{
+    height: 100vh;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.mother-nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    padding: 0 6.5rem;
+    /* width: 80%; */
+}
+
+.nav img{
+    height: 80px;
+}
+
+button{
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    scale: 1.2;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    left: 7%;
+}
+
+.content p{
+    font-weight: bolder;
+}
+
+.content h1{
+    font-size: 100px;
+    margin: 10px 0px;
+}
+
+.sidebar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 70px;
+    background: linear-gradient(#026a76b7, #03092a82);
+
+    
+}
+
+.sidebar img{
+    width: 25px;
+    display: block;                 /* margin left right auto diye majhe anar jonne block level banay neowa lage */
+    margin: 20px auto 0px;
+    transition-duration: 0.5s;
+}
+
+.sidebar img:hover{
+    scale: 1.2;
+}
+
+.social img , .other img{
+    width: 30px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.social img:hover{
+    scale: 1.2;
+}
+.other img:hover{
+    scale: 1.2;
+}
+
+
+.social{
+    width: 70px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social img{
+    width: 40px;
+}
+
+.other{
+    width: 70px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.bubble{
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+ position: absolute;
+ bottom: 0px;
+    
+}
+
+.bubble img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+
+        opacity: 1;
+    }
+    70%{
+
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+
+.bubble img:nth-child(1){
+    width: 50px;
+    height: 50px;
+    animation-delay: 1s;
+}
+.bubble img:nth-child(2){
+    width: 60px;
+    height: 60px;
+    animation-delay: 3s;
+}
+.bubble img:nth-child(3){
+    width: 70px;
+    height: 70px;
+    animation-delay: 1.5s;
+}
+.bubble img:nth-child(4){
+    width: 50px;
+    height: 50px;
+    animation-delay: 5s;
+}
+.bubble img:nth-child(5){
+    width: 60px;
+    height: 60px;
+    animation-delay: 1.5s;
+}
+.bubble img:nth-child(6){
+    width: 80px;
+    height: 80px;
+    animation-delay: 5.5s;
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+    .content{
+        text-align: center;
+    }
+    .content h1{
+        font-size: 80px;
+        margin: 20px 0px;
+    }
+
+    .sidebar{
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        background: linear-gradient(#026a76b7, #03092a82);
+    }
+    .sidebar img{
+        width: 25px;
+        display: none;                 /* margin left right auto diye majhe anar jonne block level banay neowa lage */
+        margin: 20px auto 0px;
+        transition-duration: 0.5s;
+    }
+    .social img , .other img{
+        width: 30px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+}
+
+
+
+
+
